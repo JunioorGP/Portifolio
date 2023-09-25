@@ -38,6 +38,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 86px;
+}
+.apresentacao__sobre{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 86px;
 }
 .apresentacao__conteudo{
     width: 48%;
@@ -71,6 +79,7 @@ body{
     align-items: center;
     gap: 32px;
 }
+
 .apresentacao__links__subtitulo{
     font-family: var(--fonte-primaria);
     font-weight: 400;
@@ -115,6 +124,17 @@ body{
     .apresentacao{
         display: flex;
         align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0;
+        padding-top: 15%;
+        padding-bottom: 10%;
+        gap: 15px;
+        box-sizing: border-box;
+    }
+    .apresentacao__sobre{
+        display: flex;
+        align-items: center;
         flex-direction: column;
         width: 100%;
         padding: 0;
@@ -132,7 +152,7 @@ body{
         padding-right: 5%;
     }
     .apresentacao__conteudo__titulo{
-        width: 100%;
+        width: 90%;
         padding: 5%;
     }
     section.text {
@@ -140,11 +160,18 @@ body{
       width: 100px;  
     }
     .cabecalho{
-        padding: 2% 0% 0% 5%;
-    }
-    .cabecalho__menu{
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
+        padding: 0;  
+        margin: 0;
     } 
+    .cabecalho__menu{
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 30%;
+        margin: none;
+        padding-top: 10%;
+        justify-content: center;
+    } 
+    .foto{
+        max-width: 90%;
+    }
 }
