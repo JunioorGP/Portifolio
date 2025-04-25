@@ -64,6 +64,7 @@ body{
     font-family: var(--fonte-primaria);
 }
 .titulo-destaque{
+    font-size: 30px;
     color: var(--cor-terciaria);
 }
 .apresentacao__conteudo__texto{
@@ -100,6 +101,11 @@ body{
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
 }
+.apresentacao__links__link img {
+    width: 33px; /* ou o tamanho desejado */
+    height: 32px; /* ou o tamanho desejado */
+    object-fit: contain; /* Garante que a imagem será dimensionada corretamente */
+  }
 .apresentacao__links__link:hover{
     /* background-color: var(--cor-hover); */
     scale: 1.1;
